@@ -27,7 +27,7 @@ guessedLetters.push(userGuess);
         guesses = 10;
         guessedLetters = [];
         alert("Correct, you win!");
-       
+       restart();
 
     }else{
         guesses--;
@@ -39,7 +39,7 @@ guessedLetters.push(userGuess);
         alert("Sorry, you lose!");
         guesses = 10;
         guessedLetters = []
-        
+        restart();
 
     }
 
@@ -50,4 +50,14 @@ guessedLetters.push(userGuess);
     document.querySelector('#wrong').innerHTML = "Letters you've guessed: " + guessedLetters.join(' ');
 }
 
+function restart(){
+
+computerChoice = alphabet[Math.floor(Math.random() * 26 ) +1];
+
+console.log(computerChoice);
+
+    
+
+
+}
 
